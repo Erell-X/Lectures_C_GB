@@ -38,17 +38,31 @@ int year = Method3();
 Console.WriteLine(year);
 
 
+// // Вид4
+// string Method4(int count, string text)
+// {
+//   int i = 0;
+
+//   string result = String.Empty; 
+
+//   while (count > i)
+//   {
+//     result = result + text;
+//     i++;
+//   }
+//   return result;
+// }
+// string res = Method4(10, "Ракета");
+// Console.WriteLine(res);
+
 // Вид4
 string Method4(int count, string text)
 {
-  int i = 0;
-
   string result = String.Empty; 
 
-  while (count > i)
+  for (int i = 0; i < count; i++)
   {
     result = result + text;
-    i++;
   }
   return result;
 }
